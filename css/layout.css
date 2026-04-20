@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Header */
+.menu ul li {
+    font-weight: 600;
+}
+
+
