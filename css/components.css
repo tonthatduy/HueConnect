@@ -3,10 +3,12 @@
     align-items: center;
     justify-content: center;
 
+    font-family: var(--secondary-font);
+
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.4;
-    padding: 10px 20px;
+    line-height: 1.42857143;
+    padding: 6px 12px;
 
     border: 1px solid transparent;
     border-radius: 4px;
@@ -16,22 +18,37 @@
     white-space: nowrap;
     user-select: none;
     cursor: pointer;
+    text-transform: uppercase;
 
     transition: all 0.2s ease-in-out;
 }
 
-.btn-primary {
+.btn.btn-primary {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 15px;
+    background: var(--button-primary);
+    color: #fff;
+}
+
+.btn-search {
     background: var(--button-second);
     color: #000;
 }
 
 .btn-ai {
+    font-size: 16px;
+    font-weight: 600;
     background: var(--button-primary);
     color: #fff;
 }
 
 .btn-icon {
     background: var(--button-second);
+}
+
+.btn.btn-large {
+    padding: 16px 30px;
 }
 
 .card {

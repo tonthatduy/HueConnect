@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
+    --primary-font: "Instrument Sans", sans-serif;
+    --secondary-font: "Poppins", sans-serif;
+    --primary-color: #5c6eff;
+    --secondary-color: #ffb824;
+    --text-color: #777777;
     --button-primary: #5c6eff;
     --button-second: #ffb824;
 
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
+    --other-color: #e1fff3;
+    --section-color: #eff1ff;
+    --footer-color: #767676;
 }

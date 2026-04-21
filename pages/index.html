@@ -6,8 +6,14 @@
         <title>Document</title>
         <!-- Embet Font -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
+        />
+
+        <!-- CDN  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
         <!-- CSS -->
         <link rel="stylesheet" href="/css/style.css" />
@@ -15,12 +21,362 @@
     <body>
         <div id="header"></div>
 
+        <!-- Herro -->
+
+        <section class="hero section">
+            <div class="container">
+                <div class="hero__header">
+                    <div class="hero__rating">
+                        <i>
+                            <img
+                                class="hero__rating-icon"
+                                src="/image/logo-icon.png"
+                                alt="logo-hero"
+                            />
+                        </i>
+                        <span class="hero__rating-text"
+                            >4.9 Rating with 1 Million + Happy Customers</span
+                        >
+                    </div>
+
+                    <h1 class="hero-title">
+                        We Get an
+                        <span class="hero__highlight">experienced</span>
+                        services providers
+                    </h1>
+                </div>
+
+                <!-- Search Box -->
+                <div class="hero__search">
+                    <button class="herro__search-button">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="hero__form">
+                        <input
+                            class="hero__input"
+                            type="text"
+                            placeholder="Keyword"
+                        />
+                        <select class="hero__select" name="category" id="">
+                            <option value="" placeholder="Category">
+                                Category
+                            </option>
+                        </select>
+                        <select class="hero__select" name="country" id="">
+                            <option value="" placeholder="Country">
+                                Country
+                            </option>
+                        </select>
+                        <select class="hero__select" name="city" id="">
+                            <option value="" placeholder="City">City</option>
+                        </select>
+                        <button class="btn btn-primary hero__button">
+                            <i class="fa fa-search"></i>
+                            Search Now
+                        </button>
+                    </div>
+
+                    <div class="range-wrapper">
+                        <!-- PRICE -->
+                        <div class="hero-wrapper">
+                            <div class="range-header">
+                                <span>Filter by price interval:</span>
+                                <span id="priceValue">$0 - $1000</span>
+                            </div>
+
+                            <div class="range-values">
+                                <span>$0</span>
+                                <span>$1000</span>
+                            </div>
+
+                            <div class="range-slider" id="priceSlider">
+                                <div class="slider-track"></div>
+
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="1000"
+                                    value="200"
+                                    class="minRange"
+                                />
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="1000"
+                                    value="800"
+                                    class="maxRange"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- RADIUS -->
+                        <div>
+                            <div class="range-header">
+                                <span>Filter by Radius:</span>
+                                <span id="radiusValue">0 Mi - 1000 Mi</span>
+                            </div>
+
+                            <div class="range-values">
+                                <span>0 Mi</span>
+                                <span>1000 Mi</span>
+                            </div>
+
+                            <div class="range-slider" id="radiusSlider">
+                                <div class="slider-track"></div>
+
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="1000"
+                                    value="100"
+                                    class="minRange"
+                                />
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="1000"
+                                    value="900"
+                                    class="maxRange"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories section">
+            <div class="container">
+                <div class="categories__header">
+                    <div class="categories__tag">
+                        <i>
+                            <img
+                                class="categories__tag-icon"
+                                src="/image/logo-icon.png"
+                                alt="logo-hero"
+                            />
+                        </i>
+                        <span class="categories__tag-text">Categories</span>
+                    </div>
+
+                    <h2 class="categories__title">Popular Categories</h2>
+                </div>
+
+                <!-- GRID -->
+                <div class="categories__grid">
+                    <!-- CARD 1 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-1.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Automotive</h5>
+
+                        <span class="categories__count"> 4 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-2.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">
+                            Beauty and Personal Care
+                        </h5>
+
+                        <span class="categories__count"> 5 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-3.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Business</h5>
+
+                        <span class="categories__count"> 2 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-4.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Cab Service</h5>
+
+                        <span class="categories__count"> 1 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-5.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Cafe</h5>
+
+                        <span class="categories__count"> 0 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-6.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Car care and Servicing</h5>
+
+                        <span class="categories__count"> 2 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-7.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Car Dealers</h5>
+
+                        <span class="categories__count"> 1 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-8.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Car Driving</h5>
+
+                        <span class="categories__count"> 1 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 9 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-9.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Cardiologist</h5>
+
+                        <span class="categories__count"> 0 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- CARD 10 -->
+                    <div class="categories__card">
+                        <div class="categories__icon">
+                            <img src="/image/categories-10.png" alt="" />
+                        </div>
+
+                        <h5 class="categories__name">Carpainter</h5>
+
+                        <span class="categories__count"> 1 Providers </span>
+
+                        <a class="categories__arrow">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="categories__footer">
+                    <a href="#" class="btn btn-primary btn-large">
+                        VIEW ALL CATEGORIES →
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <script>
             fetch("../layout/header.html")
                 .then((res) => res.text())
                 .then((data) => {
                     document.getElementById("header").innerHTML = data;
                 });
+
+            function initRangeSlider(sliderId, valueId, unit = "") {
+                const slider = document.getElementById(sliderId);
+                const minRange = slider.querySelector(".minRange");
+                const maxRange = slider.querySelector(".maxRange");
+                const valueText = document.getElementById(valueId);
+
+                const fill = document.createElement("div");
+                fill.classList.add("slider-fill");
+                slider.appendChild(fill);
+
+                function updateSlider() {
+                    let min = parseInt(minRange.value);
+                    let max = parseInt(maxRange.value);
+
+                    if (min > max - 10) {
+                        minRange.value = max - 10;
+                        min = max - 10;
+                    }
+
+                    if (max < min + 10) {
+                        maxRange.value = min + 10;
+                        max = min + 10;
+                    }
+
+                    const percentMin = (min / 1000) * 100;
+                    const percentMax = (max / 1000) * 100;
+
+                    fill.style.left = percentMin + "%";
+                    fill.style.width = percentMax - percentMin + "%";
+
+                    valueText.innerText = `${unit}${min} - ${unit}${max}${unit === "" ? "" : " " + unit}`;
+                }
+
+                minRange.addEventListener("input", updateSlider);
+                maxRange.addEventListener("input", updateSlider);
+
+                updateSlider();
+            }
+
+            // init
+            initRangeSlider("priceSlider", "priceValue", "$");
+            initRangeSlider("radiusSlider", "radiusValue", "Mi");
         </script>
     </body>
 </html>
