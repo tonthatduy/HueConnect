@@ -29,11 +29,16 @@
     padding: 7px 15px;
     background: var(--button-primary);
     color: #fff;
+    transition: all 0.3 ease;
 }
 
-.btn-search {
+.btn.btn-secondary {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 15px;
     background: var(--button-second);
     color: #000;
+    transition: all 0.3 ease;
 }
 
 .btn-ai {
@@ -43,8 +48,8 @@
     color: #fff;
 }
 
-.btn-icon {
-    background: var(--button-second);
+.btn.btn-icon {
+    padding: 10px 15px;
 }
 
 .btn.btn-large {
@@ -55,4 +60,16 @@
     border: 1px solid #ddd;
     padding: 16px;
     border-radius: 6px;
+}
+
+.btn.btn-secondary:hover {
+    background: var(--button-primary);
+    color: #fff;
+    transition: all 0.3 ease;
+}
+
+.btn.btn-primary:hover {
+    background: var(--button-second);
+    color: #000;
+    transition: all 0.3 ease;
 }

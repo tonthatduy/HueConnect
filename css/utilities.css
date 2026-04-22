@@ -26,6 +26,7 @@
     padding: 3px 15px 3px 3px;
     border: 1px solid var(--primary-color);
     border-radius: 50px;
+    background: #fff;
 }
 
 .hc-section-header .hc-tag-wrapper .hc-tag-icon {
