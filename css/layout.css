@@ -112,7 +112,7 @@
     border-radius: 50%;
 }
 
-.hero .hero__header .hero-hero__header .hero__rating-text {
+.hero .hero__header .hero__header .hero__rating-text {
     font-size: 18px;
 }
 
@@ -139,7 +139,7 @@
     width: 1030px;
 }
 
-.hero .hero__search .herro__search-button {
+.hero .hero__search .hero__search-button {
     position: absolute;
     top: -28px;
     left: 0;

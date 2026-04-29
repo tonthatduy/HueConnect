@@ -1,0 +1,137 @@
+<body>
+    <div id="header"></div>
+    <!-- **** Page **** -->
+    <section class="company-hero section">
+        <!-- Background Overlay -->
+        <div class="company-hero__overlay"></div>
+
+        <!-- Main Container -->
+        <div class="company-hero__container container">
+            <!-- Left Card -->
+            <div class="company-hero__profile">
+                <!-- Company Image -->
+                <div class="company-hero__image-wrapper">
+                    <img
+                        src="/image/company_01.jpg"
+                        alt="Company moving service"
+                        class="company-hero__image"
+                    />
+                    <span class="company-hero__verified-badge">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="company-hero__actions">
+                    <button
+                        class="company-hero__button company-hero__button--primary"
+                    >
+                        <i class="fa-solid fa-briefcase"></i>
+                        Invite for task
+                    </button>
+
+                    <button
+                        class="company-hero__button company-hero__button--secondary"
+                    >
+                        <i class="fa-solid fa-heart"></i>
+                        Add to favorites
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="company-hero__content">
+                <!-- Header -->
+                <div class="company-hero__header">
+                    <h1 class="company-hero__title">
+                        Worldwide Packers and Movers
+                    </h1>
+
+                    <span class="company-hero__category">
+                        Packers and Movers
+                    </span>
+                </div>
+
+                <!-- Subtitle -->
+                <p class="company-hero__subtitle">
+                    Long Distance Moving Services
+                </p>
+
+                <!-- Rating -->
+                <div class="company-hero__rating">
+                    <div class="company-hero__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="company-hero__reviews"> 0 (0 Reviews) </span>
+                </div>
+
+                <!-- Divider -->
+                <div class="company-hero__divider"></div>
+
+                <!-- Bottom Info -->
+                <div class="company-hero__details">
+                    <!-- Location -->
+                    <div class="company-hero__detail-item">
+                        <span class="company-hero__icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span class="company-hero__text"> United States </span>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="company-hero__detail-item">
+                        <span class="company-hero__icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </span>
+                        <span class="company-hero__text">
+                            +01 2344 567 895, +1 2364 567 895
+                        </span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="company-hero__detail-item">
+                        <span class="company-hero__icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <span class="company-hero__text">
+                            xyz36@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="company-hero__socials">
+                <a href="#" class="company-hero__social-link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="company-hero__social-link">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" class="company-hero__social-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+<script>
+    fetch("../layout/header.html")
+        .then((res) => res.text())
+        .then((data) => {
+            document.getElementById("header").innerHTML = data;
+        });
+
+    fetch("../layout/footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
